@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class ="hero">
+        <nav> 
+            <h2 class = "logo">Sawyer <span>Tarr</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Us</a></li>
+           
+            </ul>
+         <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Sawyer Tarr</h1>
+            <div>
+                <h3 class="container"> 
+                    <span class="text first-text">I am a </span> 
+                    <span class= "text sec-text"></span> 
+                </h3>
+            </div>
+        </div>
+            <div class="movingbox">
+                <script>
+                    const text = document.querySelector(".sec-text");
+                    const textLoad = () => {
+                        setTimeout(() => {
+                            text.textContent = "Software Engineer.";
+
+                        }, 0);
+                        setTimeout(() => {
+                            text.textContent = "Web Developer.";
+
+                        }, 4000);
+                        setTimeout(() => {
+                            text.textContent = "Photographer.";
+
+                        }, 8000);
+                    }
+                    textLoad();
+                    setInterval(textLoad, 12000)
+                </script>
+            </div>
+        <div class="newletter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="submit" name="sumbit" value="Let's Start">
+            </form>
+        </div>
+        <div class="projects">
+            <p>This is where projects go</p>
+            <ul>
+                <li><a href="#">Brewery Finder</a></li>
+                <li><a href="#">Taco Parser</a></li>
+                <li><a href="#">Best Buy Database</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>
